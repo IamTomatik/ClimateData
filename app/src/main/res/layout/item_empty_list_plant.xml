@@ -1,0 +1,42 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_empty_list_plant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardElevation="0dp"
+    android:background="@color/fon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/fon"
+        android:paddingTop="24dp" >
+
+        <!-- Иконка -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty_plant"
+            android:adjustViewBounds="true"/>
+
+        <!-- Текст -->
+        <TextView
+            android:id="@+id/text_plant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cygre_regular"
+            android:text="у вас пока нет посадок"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

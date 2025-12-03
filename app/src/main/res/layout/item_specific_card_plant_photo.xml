@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_specific_card_plant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="0dp"
+    app:cornerRadius="8dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8dp"
+        android:orientation="vertical">
+
+
+        <!--верх-->
+        <LinearLayout
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_photo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cygre_regular"
+                    android:includeFontPadding="false"
+                    android:text="местечко для вашего фото"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray4" />
+
+
+        <!--низ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/name_crop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cygre_regular"
+                            android:includeFontPadding="false"
+                            android:text="название культуры"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"/>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+                        
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_calendar"/>
+                        
+                        
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+                            <!--строчка с днями-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/days_before_collection"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cygre_regular"
+                                        android:includeFontPadding="false"
+                                        android:text="00"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="4dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cygre_regular"
+                                        android:includeFontPadding="false"
+                                        android:text="дней до сбора"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="1dp"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/days_passed"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cygre_regular"
+                                        android:includeFontPadding="false"
+                                        android:text="00"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="4dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cygre_regular"
+                                        android:includeFontPadding="false"
+                                        android:text="/"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="4dp"/>
+
+
+                                    <TextView
+                                        android:id="@+id/days_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/cygre_regular"
+                                        android:includeFontPadding="false"
+                                        android:text="00"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    style="@android:style/Widget.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="8dp"
+                                    android:max="100"
+                                    android:progress="84"
+                                    android:progressTint="@color/green"
+                                    android:progressBackgroundTint="@color/white3"
+                                    android:indeterminate="false"
+                                    android:clipToOutline="true"
+                                    android:layout_marginTop="8dp"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleLine="false"
+                    app:chipSpacingHorizontal="8dp"
+                    app:chipSpacingVertical="-8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="посадка: 07.05.2025"
+                        app:chipCornerRadius="16dp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/gray2"/>
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

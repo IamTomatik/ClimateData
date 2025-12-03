@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Создайте что-нибудь"
+        android:fontFamily="@font/cygre_regular"
+        android:includeFontPadding="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Option 1 (container with id) -->
+        <LinearLayout
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_create_location"
+                android:contentDescription="участок"/>
+
+            <TextView
+                android:id="@+id/option1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="участок"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cygre_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Option 2 -->
+        <LinearLayout
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_create_plant"
+                android:contentDescription="посадка"/>
+
+            <TextView
+                android:id="@+id/option2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="посадка"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cygre_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Option 3 -->
+        <LinearLayout
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_scan"
+                android:contentDescription="скан"/>
+
+            <TextView
+                android:id="@+id/option3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="скан"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cygre_regular"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

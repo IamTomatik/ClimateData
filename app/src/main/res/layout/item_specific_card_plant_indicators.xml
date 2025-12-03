@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_specific_card_plant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/fon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cygre_regular"
+            android:includeFontPadding="false"
+            android:text="Показатели "
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <!-- сейчас - норма -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cygre_regular"
+                    android:includeFontPadding="false"
+                    android:text="сейчас"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cygre_regular"
+                    android:includeFontPadding="false"
+                    android:text="норма"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+
+
+            <!-- контейнер для показателей -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <!-- градусы  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+
+                    <!-- градусы прогресс -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:clipToOutline="true"
+                        android:background="@drawable/progress_background">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarGradus"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:max="100"
+                            android:progress="67"
+                            android:progressTint="@color/black"
+                            android:progressBackgroundTint="@color/white"
+                            android:indeterminate="false"
+                            android:progressDrawable="@drawable/progress_rounded"
+                            android:clipToOutline="true" />
+
+
+                        <!-- сам показаетль град -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp">
+
+                            <TextView
+                                android:id="@+id/gradusFact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="°C"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- градусы норма-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/gradusMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="-"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/gradusMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:layout_marginLeft="4dp"
+                                android:text="00"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="°C"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_but_temperatyre"
+                            android:layout_marginLeft="8dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- влажность воздуха  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+
+                    <!-- влажность воздуха прогресс -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:clipToOutline="true"
+                        android:background="@drawable/progress_background">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarVlashnost"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:max="100"
+                            android:progress="67"
+                            android:progressTint="@color/black"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressDrawable="@drawable/progress_rounded"
+                            android:indeterminate="false"
+                            android:clipToOutline="true"/>
+
+
+                        <!-- сам показаетль град -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp">
+
+                            <TextView
+                                android:id="@+id/vlashnostFact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="°C"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- градусы норма-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/vlashnostMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="-"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/vlashnostMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:layout_marginLeft="4dp"
+                                android:text="00"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="%"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_but_vlashnost"
+                            android:layout_marginLeft="8dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- влажность почвы  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+
+                    <!-- влажность почвы прогресс -->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:clipToOutline="true"
+                        android:background="@drawable/progress_background">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarCarbon"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:max="100"
+                            android:progress="67"
+                            android:progressTint="@color/black"
+                            android:progressBackgroundTint="@color/white"
+                            android:progressDrawable="@drawable/progress_rounded"
+                            android:indeterminate="false"
+                            android:clipToOutline="true"/>
+
+
+                        <!-- сам показаетль град -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp">
+
+                            <TextView
+                                android:id="@+id/carbonFact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="°C"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+
+                    <Space
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- градусы норма-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/carbonMin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="00"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="-"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:id="@+id/carbonMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|start"
+                                android:fontFamily="@font/cygre_regular"
+                                android:layout_marginLeft="4dp"
+                                android:text="00"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:fontFamily="@font/cygre_regular"
+                                android:text="%"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_but_carbon"
+                            android:layout_marginLeft="8dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/graphic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cygre_regular"
+                    android:includeFontPadding="false"
+                    android:text="подробнее на графике"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_graph_inactiv"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

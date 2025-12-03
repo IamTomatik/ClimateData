@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.ClimateData.MyView" parent="">
+
+    </style>
+
+    <style name="PlainChip" parent="@android:style/Widget">
+        <item name="android:fontFamily">@font/cygre_regular</item>
+    </style>
+
+</resources>

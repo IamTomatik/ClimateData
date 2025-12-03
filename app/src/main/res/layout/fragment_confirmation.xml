@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_createSowing.ConfirmationFragment"
+    android:background="@color/fon">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="32dp">
+
+
+        <!-- Шкала шагов -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="5.5"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Почти у цели"
+            android:fontFamily="@font/cygre_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginBottom="24dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <EditText
+                android:id="@+id/plantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="название"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"/>
+
+
+            <EditText
+                android:id="@+id/plantCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="культура"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/plantDataStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="дата посади"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/plantDataEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="дата сбора"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Площадь (га)"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"
+                android:fontFamily="@font/cygre_regular"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cygre_regular"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp"
+            android:text="создать посев"
+            android:textColor="@color/white"
+            android:paddingVertical="12dp"
+            android:textSize="24sp"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="4dp"/>
+    </LinearLayout>
+
+</FrameLayout>

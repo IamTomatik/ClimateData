@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/choiceCultureFragment">
+
+    <fragment
+        android:id="@+id/choiceCultureFragment"
+        android:name="com.example.climatedata.fragment_createSowing.ChoiceCultureFragment"
+        android:label="fragment_choice_location"
+        tools:layout="@layout/fragment_choice_location" />
+    <fragment
+        android:id="@+id/analysisFragment"
+        android:name="com.example.climatedata.AnalysisFragment"
+        android:label="fragment_analysis"
+        tools:layout="@layout/fragment_analysis" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.climatedata.SplashActivity"
+        android:label="splash"
+        tools:layout="@layout/splash" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.climatedata.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

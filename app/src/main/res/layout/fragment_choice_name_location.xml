@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_createSowing.ChoiceNameFragment"
+    android:background="@color/fon"
+    android:id="@+id/fragmentChoiceName">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!--шкала-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="4.5">
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"/>
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"/>
+        </LinearLayout>
+
+
+        <!-- название -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите тип участка и назовите его "
+            android:fontFamily="@font/cygre_regular"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="40dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/cygre_regular"
+                android:singleLine="true"
+                android:background="@drawable/spinner_underline"
+                android:layout_marginBottom="16dp" />
+
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="название"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:fontFamily="@font/cygre_regular"
+            android:gravity="center"
+            android:text="продолжить"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="@color/gray"
+            app:cornerRadius="4dp"/>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

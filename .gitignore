@@ -1,0 +1,34 @@
+# IntelliJ / Android Studio
+*.iml
+.idea/
+.DS_Store
+
+# Gradle
+.gradle/
+local.properties
+
+# Build output
+/build/
+/*/build/
+
+# Captures
+/captures/
+
+# NDK / CMake
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Keystore (очень важно)
+*.jks
+*.keystore
+
+# Android Studio specific
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml

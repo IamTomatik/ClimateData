@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/fon"
+    tools:context=".fragment_createSowing.ChoiceNameFragment">
+
+    <LinearLayout
+        android:id="@+id/fragmentChoiceNameLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp">
+
+        <!-- Шкала шагов -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="5.5"
+            android:layout_marginBottom="24dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius" />
+        </LinearLayout>
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Укажите наименование посева"
+            android:fontFamily="@font/cygre_regular"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:includeFontPadding="false"
+            android:layout_marginBottom="40dp"
+            />
+
+        <!-- Основной контент -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="название"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="32sp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:id="@+id/textCulture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="заглушка"
+                android:fontFamily="@font/cygre_regular"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#565656"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <!-- Кнопка -->
+        <Button
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:fontFamily="@font/cygre_regular"
+            android:gravity="center"
+            android:text="продолжить"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:paddingVertical="12dp"
+            app:backgroundTint="@color/gray4"
+            app:cornerRadius="4dp" />
+
+    </LinearLayout>
+</ScrollView>

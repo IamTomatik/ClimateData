@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_createSowing.ConfirmationFragment"
+    android:background="@color/fon"
+    android:id="@+id/fragmentFinish">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!--шкала-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="4.5">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black"/>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black"/>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/radius"
+                android:backgroundTint="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <Spinner
+                android:id="@+id/spinner_locationType"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/cygre_regular"
+                android:singleLine="true"
+                android:background="@drawable/spinner_underline" />
+
+
+            <EditText
+                android:id="@+id/locationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="название"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/locationRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="регион"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinnerSoil"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:fontFamily="@font/cygre_regular"
+                android:singleLine="true"
+                android:background="@drawable/spinner_underline"
+                android:layout_marginTop="24dp" />
+
+            <EditText
+                android:id="@+id/locationSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:focusable="true"
+                android:fontFamily="@font/cygre_regular"
+                android:hint="площадь"
+                android:inputType="textVisiblePassword"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:singleLine="true"
+                android:textColor="@color/gray2"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cygre_regular"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp"
+            android:text="создать участок"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="4dp"/>
+    </LinearLayout>
+
+</FrameLayout>

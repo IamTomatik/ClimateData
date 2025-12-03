@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="56dp"
+    android:id="@+id/dayText"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="4dp"
+    android:background="@drawable/bg_calendar_day_selector">
+
+    <TextView
+        android:id="@+id/dayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="пн"
+        android:textColor="@color/gray3"
+        android:textSize="16sp"
+        android:fontFamily="@font/cygre_regular"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:id="@+id/dayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textColor="@color/gray3"
+        android:textSize="16sp"
+        android:fontFamily="@font/cygre_regular"
+        android:includeFontPadding="false"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
